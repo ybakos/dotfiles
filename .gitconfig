@@ -1,0 +1,9 @@
+[user]
+	name = Yong Bakos
+	email = ybakos@humanoriented.com
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+[github]
+	user = ybakos

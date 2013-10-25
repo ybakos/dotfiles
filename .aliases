@@ -1,0 +1,47 @@
+alias a="source ~/.bash_login"
+alias ae="aquamacs"
+alias l="ls"
+alias ll="ls -lah"
+alias la="ls -al"
+alias sl="sqlite3"
+alias p="pwd | pbcopy"
+alias m="mate"
+alias s="subl -n"
+alias d="cd ~/Downloads"
+alias docs="cd ~/Documents"
+alias D="cd ~/Desktop"
+alias t="tail -f"
+alias o="open"
+alias q="qlmanage -p"
+
+# Git
+alias g="git status"
+alias gc="git commit"
+alias gb="git branch"
+alias gcb="git checkout -b"
+alias gl="git log"
+alias ga="git add"
+alias gp="git push"
+alias gpl="git pull"
+alias gt="git tag"
+
+# Cucumber
+alias cu="cucumber"
+
+# Rails
+alias r="rails"
+alias ss="script/server"
+alias sc="script/console"
+alias csd="cap staging deploy"
+alias cpd="cap production deploy"
+alias restart="touch tmp/restart.txt"
+alias tl="tail -f log/development.log"
+
+# Ruby
+alias sgi="sudo gem install --no-rdoc --no-ri"
+alias sgl="sudo gem list"
+alias sgu="sudo gem update --no-rdoc --no-ri"
+
+# Teaching
+
+# Projects
