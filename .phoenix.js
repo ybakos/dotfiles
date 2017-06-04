@@ -310,7 +310,13 @@ moveMode.addSubShortcut('down', ['cmd'], function () { moveToEdge('down') })
 var maximise = function () {
   var window = Window.focused()
   if (window) {
-    window.maximise()
+    var screenFrame = window.screen().flippedFrame()
+    window.setFrame({
+      x: screenFrame.x,
+      y: screenFrame.y,
+      width: parseInt(screenFrame.width),
+      height: screenFrame.height,
+    })
   }
 }
 
