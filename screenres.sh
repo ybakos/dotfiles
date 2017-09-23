@@ -1,1 +1,0 @@
-screenresolution set 2560x1600x32@0
