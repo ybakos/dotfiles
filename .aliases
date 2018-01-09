@@ -17,6 +17,7 @@ alias workoff="deactivate"
 
 # Git
 alias g="git status"
+alias gs="git show"
 alias gcam="git commit -am"
 alias gb="git branch"
 alias gcb="git checkout -b"
