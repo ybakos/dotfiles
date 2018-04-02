@@ -12,3 +12,6 @@ export LC_CTYPE=en_US.UTF-8
 
 source ~/.aliases
 source ~/.prompt
+
+# brew install autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sha
