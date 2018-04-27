@@ -22,9 +22,9 @@ source ~/.prompt
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Python: automatically activate venv if it exists
-function cd {
-    builtin cd "$@"
-    if [ -f "pyvenv.cfg" ] ; then
-        source bin/activate
-    fi
-}
+# function cd {
+#     builtin cd "$@"
+#     if [ -f "pyvenv.cfg" ] ; then
+#         source bin/activate
+#     fi
+# }
