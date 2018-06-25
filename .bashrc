@@ -28,3 +28,10 @@ source ~/.prompt
 #         source bin/activate
 #     fi
 # }
+
+# brew install bash-completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# brew install fzf
+# $(brew --prefix)/opt/fzf/install
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
