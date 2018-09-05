@@ -64,8 +64,14 @@ bindsym $mod+Shift+c reload
 # exit sway (logs you out of your wayland session)
 bindsym $mod+Shift+e exit
 
+
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
+bindsym XF86AudioRaiseVolume exec amixer sset Master\,0 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer sset Master\,0 5%- unmute
+bindsym XF86AudioMute exec amixer sset Master\,0 toggle
+
+
 #
 # Moving around:
 #
@@ -199,3 +205,4 @@ include /etc/sway/config.d/*
 
 exec xrdb ~/.Xresources
 
+n
