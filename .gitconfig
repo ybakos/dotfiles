@@ -11,6 +11,7 @@
   default = simple
 [core]
   excludesfile = ~/.gitignore_global
+  editor = subl -n
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
