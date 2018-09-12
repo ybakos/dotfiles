@@ -33,7 +33,4 @@ https.get(AIRNOW_API_URL, (response) => {
   console.error(error);
 });
 
-function parseAqiFromResponseBody(body) {
-  aqi = parseInt(body[0].AQI);
-  return aqi;
-}
+const parseAqiFromResponseBody = (body) => parseInt(body[0].AQI);
