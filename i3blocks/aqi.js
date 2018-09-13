@@ -4,13 +4,12 @@
 // zip code and airnow.gov api token.
 
 const https = require('https')
-const AIRNOW_API_URL = "https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=97703&distance=25&API_KEY=EABD54C6-1A53-4B2F-AEF0-2D184D40DCAD"
+const AIRNOW_API_URL = 'https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=97703&distance=25&API_KEY=EABD54C6-1A53-4B2F-AEF0-2D184D40DCAD'
 const parseAqiFromResponseBody = (body) => parseInt(body[0].AQI)
 
 https.get(AIRNOW_API_URL, response =>
   response.on('data', data => {
-    responseBody = JSON.parse(data)
-    const aqi = parseAqiFromResponseBody(responseBody)
+    let aqi = parseAqiFromResponseBody(JSON.parse(data))
     if (isNaN(aqi)) {
       aqi = '?'
       color = '#373b41'
