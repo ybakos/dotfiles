@@ -34,8 +34,9 @@ output * bg /usr/share/backgrounds/f28/default/normalish/f28.png fill
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 input "2:7:SynPS/2_Synaptics_TouchPad" {
-    # dwt enabled
+    dwt enabled
     tap enabled
+    pointer_accel 1.0
 }
 
 
@@ -206,3 +207,4 @@ include /etc/sway/config.d/*
 
 exec xrdb ~/.Xresources
 
+exec xset r rate 200 25
