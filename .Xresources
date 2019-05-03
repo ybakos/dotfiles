@@ -1,6 +1,6 @@
 URxvt.scrollBar: false
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=18
-URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=18:weight=bold
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=24, xft:Noto Color Emoji
+URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=24:weight=bold
 !! URxvt.letterSpace: -1
 URxvt.depth: 32
 URxvt*background: rgba:0000/0000/0000/c800
