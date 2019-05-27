@@ -37,8 +37,10 @@ $status = $1;
 $percent = $2;
 $full_text = "$percent%";
 
-if ($status eq 'Charging') {
-	$full_text .= ' 🔌';
+if ($status eq 'Discharging') {
+#	$full_text .= ' DIS';
+} elsif ($status eq 'Charging') {
+	$full_text .= ' charging';
 }
 
 $short_text = $full_text;
@@ -55,15 +57,15 @@ print "$short_text\n";
 if ($status eq 'Discharging') {
 
 	if ($percent < 20) {
-		print "#CC6666\n";
+		print "#AB4642\n";
 	} elsif ($percent < 40) {
-		print "#A3685A\n";
+		print "#DC9656\n";
 	} elsif ($percent < 60) {
-		print "#F0C674\n";
+		print "#F7CA88\n";
 	} elsif ($percent < 85) {
-		print "#B5BD68\n";
-	} else {
-		print "#B5EE68\n";
+		print "#A1B56C\n";
+	} elsif ($percent < 100) {
+                print "#A1EE6C\n";
 	}
 
 	if ($percent < 5) {

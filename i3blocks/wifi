@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Copyright (C) 2014 Alexander Keller <github@nycroth.com>
 
 # This program is free software: you can redistribute it and/or modify
@@ -36,11 +36,11 @@ echo $QUALITY% # short text
 
 # color
 if [[ $QUALITY -ge 80 ]]; then
-    echo "#B5EE68"
+    echo "#A1B56C"
 elif [[ $QUALITY -lt 80 ]]; then
-    echo "#B5BD68"
-elif [[ $QUALITY -lt 60 ]]; then
     echo "#F0C674"
-elif [[ $QUALITY -lt 40 ]]; then
+elif [[ $QUALITY -lt 60 ]]; then
     echo "#CC6666"
+elif [[ $QUALITY -lt 40 ]]; then
+    echo "#FF0000"
 fi
