@@ -51,7 +51,3 @@ alias fs="foreman start"
 alias sgi="sudo gem install --no-rdoc --no-ri"
 alias sgl="sudo gem list"
 alias sgu="sudo gem update --no-rdoc --no-ri"
-
-# Teaching
-
-# Projects
