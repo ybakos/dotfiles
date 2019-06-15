@@ -25,6 +25,7 @@ set $menu dmenu_run
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
+swaybg_command /usr/local/bin/swaybg
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/f28/default/normalish/f28.png fill
 
@@ -33,12 +34,17 @@ output * bg /usr/share/backgrounds/f28/default/normalish/f28.png fill
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-input "2:7:SynPS/2_Synaptics_TouchPad" {
+input "1739:0:Synaptics_TM3289-002" {
     dwt enabled
     tap enabled
-    pointer_accel 1.0
+    pointer_accel 0.5
+    accel_profile adaptive
 }
 
+input "1:1:AT_Translated_Set_2_keyboard" {
+    repeat_delay 300
+    repeat_rate 20
+}
 
 ### Key bindings
 
@@ -191,6 +197,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    swaybar_command /usr/local/bin/swaybar
     font pango:DejaVu Sans Mono 12
     status_command i3blocks
     position top
