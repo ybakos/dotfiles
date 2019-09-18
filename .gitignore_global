@@ -51,3 +51,6 @@ node_modules/
 elm-stuff
 # elm-repl generated files
 repl-temp-*
+
+# Rerun utility config
+*.rerun
