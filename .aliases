@@ -28,6 +28,7 @@ alias de="git checkout development"
 alias gmd="git merge develop"
 alias gmde="git merge development"
 alias gl="git log"
+alias gll="git log -1"
 alias ga="git add"
 alias gp="git push"
 alias gpl="git pull"
@@ -51,3 +52,7 @@ alias fs="foreman start"
 alias sgi="sudo gem install --no-rdoc --no-ri"
 alias sgl="sudo gem list"
 alias sgu="sudo gem update --no-rdoc --no-ri"
+
+# Teaching
+
+# Projects
