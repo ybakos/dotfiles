@@ -1,4 +1,4 @@
 function s
-    subl -n
+    subl -n $argv
 end
 

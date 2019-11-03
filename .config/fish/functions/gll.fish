@@ -1,4 +1,4 @@
-function gl
-    git log log -1
+function gll
+    git log -1
 end
 
