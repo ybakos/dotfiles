@@ -1,4 +1,4 @@
 function gcb
-    git checkout -b
+    git checkout -b $argv
 end
 
