@@ -13,7 +13,8 @@ set $down s
 set $right d
 
 # Terminal emulator
-set $term urxvt256c-ml
+#set $term urxvt256c-ml
+set $term alacritty
 
 # Application launcher
 set $menu dmenu_run
