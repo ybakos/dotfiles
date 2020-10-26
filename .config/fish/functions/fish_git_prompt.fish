@@ -333,7 +333,7 @@ function __fish_git_prompt_show_upstream --description "Helper function for __fi
     end
 end
 
-function __fish_git_prompt --description "Prompt function for Git"
+function fish_git_prompt --description "Prompt function for Git"
     # If git isn't installed, there's nothing we can do
     # Return 1 so the calling prompt can deal with it
     if not command -sq git
