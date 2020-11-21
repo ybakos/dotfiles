@@ -1,3 +1,5 @@
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
