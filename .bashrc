@@ -1,3 +1,4 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
 export ANT_HOME=/usr/local/ant
 export SVN_EDITOR="subl -w"
 export EDITOR="subl -w"
@@ -9,6 +10,8 @@ export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.
 export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
+export GOPATH=$HOME/projects/go
+export PATH=$PATH:$GOPATH/bin
 
 source /Users/yongbakos/Library/Python/3.6/bin/virtualenvwrapper.sh
 
@@ -35,3 +38,5 @@ source ~/.prompt
 # brew install fzf
 # $(brew --prefix)/opt/fzf/install
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+HEROKU_AC_BASH_SETUP_PATH=/Users/ybakos/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
